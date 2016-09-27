@@ -1,15 +1,15 @@
 source 'https://rubygems.org'
 
-gem 'sqlite3'
-
 group :assets do
   gem 'coffee-rails'
   gem 'sass-rails'
 end
 
 # Provides basic frontend and backend functionalities for testing purposes
-gem "solidus", github: "solidusio/solidus"
-gem 'solidus_auth_devise', github: 'solidus/solidus_auth_devise'
+gem "solidus"
+gem 'solidus_auth_devise'
+
+gem 'sqlite3', :group => "development"
 
 group :test do
   gem 'shoulda-matchers', '~> 2.8.0'
